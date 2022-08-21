@@ -1,7 +1,7 @@
 /**
  * Created by IntelliJ IDEA.
  * User: Cangue.Jamba
- * Project name: microservices
+ * Project name: microservices-distributed-tracing
  */
 package io.blog.comment;
 

@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>microservices</artifactId>
-        <groupId>io.microservices</groupId>
+        <artifactId>microservices-distributed-tracing</artifactId>
+        <groupId>io.microservices-distributed-tracing</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -44,12 +44,19 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-sleuth</artifactId>
+        </dependency>
 
-        <!-- spring cloud dependencies: -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-sleuth-zipkin</artifactId>
+        </dependency>
 
         <!-- Custom dependencies: -->
         <dependency>
-            <groupId>io.microservices</groupId>
+            <groupId>io.microservices-distributed-tracing</groupId>
             <artifactId>feign</artifactId>
             <version>1.0-SNAPSHOT</version>
             <scope>compile</scope>
